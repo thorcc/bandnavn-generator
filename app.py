@@ -19,7 +19,7 @@ print(adjektiv[tilfeldig_adj] + " " + banneord[tilfeldig_banne])
 
 @app.route('/')
 def hello_world():
-    counter += 1
+    counter = counter + 1
     rnd_adj = randint(0, len(adjektiv))
     rnd_banne = randint(0, len(banneord))
     navn = f'{adjektiv[rnd_adj]} {banneord[rnd_banne]}'
